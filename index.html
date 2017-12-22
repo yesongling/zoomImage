@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .zoombox{
+            height: 377px;
+            width: 377px;
+            border: 1px solid black;
+        }
+        .zoombox img{
+            height: 100%;
+            width: 100%;
+        }
+        .zoomImgBox{
+            border: 1px solid green;
+            height: 197px;
+            width: 197px;
+        }
+        .zoomImgBox img{
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="zoombox">
+        <img src="comp.png" alt="test">
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/1.12.2/jquery.js"></script>
+    <script src="jquery.zoom.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(".zoombox").zoom({boxWidth:200,boxheight:200,shadowWidth:80,shadowHeight:80,shadowColor:'rgba(0,0,0,0.8)'});
+    </script>
+</body>
+</html>
